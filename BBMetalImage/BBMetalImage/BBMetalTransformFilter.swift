@@ -6,6 +6,8 @@
 //  Copyright © 2020 Kaibo Lu. All rights reserved.
 //
 
+import simd
+import CoreGraphics
 import Metal
 
 /// Applies affine transform to an image

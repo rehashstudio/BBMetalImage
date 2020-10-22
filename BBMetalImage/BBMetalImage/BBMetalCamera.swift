@@ -113,16 +113,16 @@ public class BBMetalCamera: NSObject {
     
     private let lock: DispatchSemaphore
     
-    private var session: AVCaptureSession!
-    private var camera: AVCaptureDevice!
-    private var videoInput: AVCaptureDeviceInput!
-    private var videoOutput: AVCaptureVideoDataOutput!
+    public var session: AVCaptureSession!
+    public var camera: AVCaptureDevice!
+    public var videoInput: AVCaptureDeviceInput!
+    public var videoOutput: AVCaptureVideoDataOutput!
     private var videoOutputQueue: DispatchQueue!
     
     private let multitpleSessions: Bool
-    private var audioSession: AVCaptureSession!
-    private var audioInput: AVCaptureDeviceInput!
-    private var audioOutput: AVCaptureAudioDataOutput!
+    public var audioSession: AVCaptureSession!
+    public var audioInput: AVCaptureDeviceInput!
+    public var audioOutput: AVCaptureAudioDataOutput!
     private var audioOutputQueue: DispatchQueue!
     
     /// Audio consumer processing audio sample buffer.
@@ -148,7 +148,7 @@ public class BBMetalCamera: NSObject {
     }
     private var _audioConsumer: BBMetalAudioConsumer?
     
-    private var photoOutput: AVCapturePhotoOutput!
+    public var photoOutput: AVCapturePhotoOutput!
     
     /// Whether can take photo or not.
     /// Set this property to true before calling `takePhoto()` method.
